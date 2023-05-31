@@ -1,0 +1,65 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    align-items: center;
+    padding: 10px;
+}
+.main {
+    width: 540px;
+    height: 332px;
+    border-radius: 12px;
+    background-color: hsl(217, 19%, 24%);
+    margin: auto auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.main button:hover,
+.main button:active,
+.main button:focus {
+    box-shadow: 0 0 20px 0 hsl(150, 100%, 66%);
+}
+.main span.pattern {
+    background: url("../../images/pattern-divider-desktop.svg") center center no-repeat;
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+.main button {
+    background: url("../../images/icon-dice.svg") center center no-repeat hsl(150, 100%, 66%);
+    padding: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -32px;
+    right: calc(50% - 32px);
+}
+.advice_txt {
+    font: 28px/40px "Manrope";
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+}
+.advice_txt span {
+    display: block;
+    text-align: center;
+    font: 14px "Manrope";
+    color: hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        max-width: 540px;
+        margin: auto auto;
+    }
+    .main span.pattern {
+        background: url("../../images/pattern-divider-mobile.svg") center center no-repeat;
+        display: block;
+        width: 100%;
+        height: 30px;
+    }
+}
